@@ -853,9 +853,6 @@ input[type=submit]:focus {
 .page-template-front-page .header {
   background-color: rgba(36, 40, 42, 0.5);
 }
-.page-template-front-page .header-logo {
-  display: none;
-}
 
 .header {
   background-color: #24282a;
@@ -1048,6 +1045,9 @@ a {
   color: #f1eed6;
 }
 .cart-icon .basketicon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   color: #f1eed6;
 }
 
@@ -1563,6 +1563,11 @@ body.page-cart .cart_totals {
 .sixty {
   width: 60%;
 }
+@media only screen and (max-width: 768px) {
+  .sixty {
+    width: 100%;
+  }
+}
 
 .col-25 {
   width: 25%;
@@ -1590,6 +1595,9 @@ p.no-margin {
 
 .left {
   margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 @media only screen and (max-width: 768px) {
   .left {
@@ -1598,10 +1606,6 @@ p.no-margin {
 }
 
 /* Contact us */
-body.page-contact-us .content p {
-  text-align: center;
-}
-
 .nf-form-content input[type=button] {
   background: transparent !important;
   color: #24282a !important;

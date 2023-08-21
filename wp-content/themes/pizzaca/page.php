@@ -28,7 +28,11 @@ $image = get_the_post_thumbnail_url( get_the_ID(), 'full' );
 			<div class="content center">
 				<h1 class="title"><?php the_title();?></h1>
 				<div class="vertical">
+				<?php if($content): ?>
 					<p><?php echo $content; ?> </p>
+					<?php else: ?>
+					<p><?php the_content(); ?></p>
+					<?php endif; ?>
 				</div>
 			</div>	
 		</div>	

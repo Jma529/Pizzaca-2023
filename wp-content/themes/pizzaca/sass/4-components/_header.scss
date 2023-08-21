@@ -2,11 +2,9 @@
 /* Front page */
 
 .page-template-front-page {
+
 	.header {
 		background-color: rgba(36, 40, 42, .5);
-	}
-	.header-logo {
-		display: none;
 	}
 }
 
@@ -222,6 +220,9 @@
 		color: $color__link;
 
 		.basketicon {
+			display: flex;
+			align-items: center;
+			gap: 10px;
 			color: $color__link;
 		}
 	}

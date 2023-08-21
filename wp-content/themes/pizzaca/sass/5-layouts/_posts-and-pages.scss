@@ -50,6 +50,10 @@
 
 .sixty {
 	width: 60%;
+
+	@include breakpoint(sm) {
+		width: 100%;
+	}
 }
 
 .col-25 {
@@ -82,6 +86,9 @@ p {
 
 .left {
 	margin-right: 10%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 
 	@include breakpoint(sm) {
 		margin-right: 0;
@@ -89,16 +96,6 @@ p {
 }
 
 /* Contact us */
-
-body {
-	&.page-contact-us {
-		.content {
-			p {
-				text-align: center;
-			}
-		}
-	}
-}
 
 .nf-form-content {
 
