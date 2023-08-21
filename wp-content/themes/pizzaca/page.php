@@ -12,6 +12,10 @@
  * @package Pizzaca
  */
 
+ // Variables 
+
+ $content = get_field('content_field');
+
 get_header();
 
 // Variables 
@@ -24,7 +28,7 @@ $image = get_the_post_thumbnail_url( get_the_ID(), 'full' );
 			<div class="content center">
 				<h1 class="title"><?php the_title();?></h1>
 				<div class="vertical">
-					<p><?php the_content();?> </p>
+					<p><?php echo $content; ?> </p>
 				</div>
 			</div>	
 		</div>	

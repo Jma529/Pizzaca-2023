@@ -1,4 +1,28 @@
 
+// General 
+
+.content {
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  padding: 0 50px;
+
+  @include breakpoint(lg) {
+    padding: 0 20px;
+  }
+
+  p {
+    text-align: left;
+  }
+
+  h1 {
+    &.bottom-padding {
+      padding-bottom: 20px;
+    }
+  }
+}
+
+
 .col-4 {
 	width: 100%;
 }
@@ -56,4 +80,35 @@ p {
 	@include breakpoint(sm) {
 		margin-right: 0;
 	}
+}
+
+/* Contact us */
+
+body {
+	&.page-contact-us {
+		.content {
+			p {
+				text-align: center;
+			}
+		}
+	}
+}
+
+.nf-form-content {
+
+  input[type=button] {
+  background: transparent !important;
+  color: $color__text-main !important;
+  width: 100% !important;
+  border: 1px solid $color__text-main !important;
+
+  &:hover {
+    background: $color__text-main !important;
+    color: $color__text-main-rev !important;
+  }
+}
+
+  .nf-form-fields-required {
+    font-size: 12px;
+  }
 }

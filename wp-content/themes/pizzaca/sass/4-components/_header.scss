@@ -30,7 +30,6 @@
 			height: auto;
 		}
 	}
-
   
 	.main-navigation {
 		display: flex;
@@ -41,19 +40,15 @@
 		&.toggled {
 			width: auto;
 			height: auto;
-
-			
 		}
 
 		.menu-items {
 			display: flex;
 			align-items: center;
 
-
 			@include breakpoint(sm) {
 				margin-top: 40px;
 			}
-
 		}
 
 		ul {
@@ -65,45 +60,35 @@
 			@include breakpoint(sm) {
 				display: none;
 			}
-
 		}
 
-				li {
-					padding: 40px;
+			li {
+				padding: 40px;
 
-					&:hover > ul,
-					&.focus > ul {
-						display: block;
-						left: auto;
-					}
-				}
-
-				a {
-					color: $color__text-main-rev;
-					font-family: $font__headings;
-					font-size: 18px;
-					text-transform: uppercase;
-
-					&:hover {
-						text-decoration: underline;
-					}
-
-				}
-
-				:hover > a,
-				.focus > a {
-				}
-
-				a:hover,
-				a.focus {
+				&:hover > ul,
+				&.focus > ul {
+					display: block;
+					left: auto;
 				}
 			}
 
-			li:hover > ul,
-			li.focus > ul {
-				left: auto;
+		a {
+			color: $color__text-main-rev;
+			font-family: $font__headings;
+			font-size: 18px;
+			text-transform: uppercase;
+
+			&:hover {
+				text-decoration: underline;
 			}
 		}
+	}
+
+		li:hover > ul,
+		li.focus > ul {
+			left: auto;
+		}
+	}
 
 		li {
 			position: relative;
@@ -121,7 +106,7 @@
 		}
 	
 
-/* Small menu. */
+/* Mobile menu. */
 
 .menu-toggle {
 	display: none;
@@ -166,6 +151,7 @@
 	//=============================================================================================================
 // Contact Info
 //=============================================================================================================
+
 .social-icons {
 	display: flex;
 
@@ -204,7 +190,12 @@
 	// Cart icon
 
 	.cart-icon {
+		color: $color__link;
 		position: absolute;
     top: 20px;
     right: 20px;
+
+		.basketicon {
+			color: $color__link;
+		}
 	}
