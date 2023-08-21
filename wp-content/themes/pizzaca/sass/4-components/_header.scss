@@ -25,21 +25,51 @@
 
 		@include breakpoint(sm) {
 			padding: 10px;
-			flex-direction: column;
-			align-items: center;
-			height: auto;
 		}
 	}
-  
+
+	.header-content {
+		display: flex;
+		align-items: center;
+		width: 100%;
+
+
+		@include breakpoint(sm) {
+			flex-direction: column;
+			height: auto;
+			gap: 20px;
+		}
+
+		.site-branding {
+			@include breakpoint(sm) { 
+				order: 2;
+			}
+		}
+		.main-navigation {
+			@include breakpoint(sm) { 
+				order: 3;
+			}
+	}
+}
 	.main-navigation {
 		display: flex;
 		justify-content: center;
 		text-align: center;
 		width: 100%;
 
+		.arrow {
+			transition: all .2s linear;
+		}
+
+
 		&.toggled {
 			width: auto;
 			height: auto;
+
+			.arrow {
+				transform: rotate(180deg);
+				transition: all .2s linear;
+			}
 		}
 
 		.menu-items {
@@ -112,7 +142,6 @@
 	display: none;
 	color: white;
  
-
 	@include breakpoint(sm) {
 	display: flex;
 	position: absolute;
@@ -191,9 +220,6 @@
 
 	.cart-icon {
 		color: $color__link;
-		position: absolute;
-    top: 20px;
-    right: 20px;
 
 		.basketicon {
 			color: $color__link;

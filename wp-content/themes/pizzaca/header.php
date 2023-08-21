@@ -33,19 +33,20 @@
 
 		<header id="masthead" class="header">
 			<div class="wrapper header-wrapper">
-				<div class="flex">
+				<div class="header-content">
 					<div class="site-branding">
 						<div class="header-logo">
-							<a href="<?php echo get_home_url(); ?>">
-								<img class="logo" src="<?php echo get_template_directory_uri(); ?>/media/images/pizzaca-logo-light.svg"
-									alt="<?php bloginfo( 'name' ); ?>" />
-							</a>
+						<a href="<?php echo get_home_url(); ?>">
+						<img class="logo" src="<?php echo get_template_directory_uri(); ?>/media/images/logo-text-dark.svg" alt="<?php bloginfo( 'name' ); ?>" />
+					</a>
 						</div>
 					</div>
 
 					<nav id="site-navigation" class="main-navigation">
 						<button class="menu-toggle" aria-controls="primary-menu"
-							aria-expanded="false"><?php esc_html_e( 'Mobile Menu', 'pizzaca' ); ?></button>
+							aria-expanded="false"><?php esc_html_e( 'Mobile Menu', 'pizzaca' ); ?>
+							<svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m12 19l6-6m-6 6l-6-6m6 6V5"/></svg>
+						</button>
 						<div class="menu-items">
 							<?php
 				wp_nav_menu(

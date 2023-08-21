@@ -57,7 +57,6 @@
 									)
 								);
 							?>
-						<a href="https://bookings.nowbookit.com/?accountid=49a6c8b7-9e67-40de-826b-b3e48b11e015&venueid=6636&theme=dark&colors=hex,ffffff" target="_none">Make a booking</a>
 					</div>
 					</div>
 					<div class="nav-item">
