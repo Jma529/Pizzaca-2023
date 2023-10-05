@@ -1620,6 +1620,11 @@ p.no-margin {
   font-size: 12px;
 }
 
+/* Jobs page */
+body.page-work-with-us .vertical {
+  align-items: unset;
+}
+
 .front-page .site-logo {
   height: 100vh;
   display: flex;

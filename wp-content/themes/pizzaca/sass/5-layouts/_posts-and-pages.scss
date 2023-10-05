@@ -115,3 +115,14 @@ p {
     font-size: 12px;
   }
 }
+
+/* Jobs page */
+
+body {
+	&.page-work-with-us {
+		.vertical {
+			align-items: unset;
+		}
+	}
+}
+
