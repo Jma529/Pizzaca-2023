@@ -85,7 +85,7 @@
 				</div>
 			</div>
 			<div class="site-info">
-				<!-- <p>Made by JMac Designs</p>
+				<!-- <p>Made by JM Designs</p>
 				<span class="sep"> | </span> -->
 				<p>©2023 Pizzaca</p>
 			</div><!-- .site-info -->

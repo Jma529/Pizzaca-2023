@@ -626,7 +626,62 @@ big {
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
-button, .button.contact-button,
+.announcement-bar {
+  width: 100%;
+  background-color: #f1eed6;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 15px;
+  z-index: 9999;
+}
+.announcement-bar .wrapper {
+  padding: 0 80px;
+}
+.announcement-bar .announcement-content {
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .announcement-bar .announcement-content {
+    gap: 15px;
+    flex-direction: column;
+  }
+}
+.announcement-bar .announcement-content p {
+  margin-bottom: 0;
+  font-family: Akrobat;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+@media only screen and (max-width: 768px) {
+  .announcement-bar .announcement-content p {
+    font-size: small;
+    text-align: center;
+  }
+}
+.announcement-bar .announcement-content a {
+  background: transparent;
+  border: 1px solid #000000;
+  color: #000000;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 768px) {
+  .announcement-bar .announcement-content a {
+    font-size: small;
+  }
+}
+.announcement-bar .announcement-content a:hover {
+  background-color: #000000;
+  color: #f1eed6;
+}
+
+button, .button, .button.contact-button,
 input[type=button],
 input[type=reset],
 input[type=submit] {
@@ -636,13 +691,13 @@ input[type=submit] {
   padding: 10px 20px;
   background-color: transparent;
 }
-button:hover, .button.contact-button:hover,
+button:hover, .button:hover, .button.contact-button:hover,
 input[type=button]:hover,
 input[type=reset]:hover,
 input[type=submit]:hover {
   color: #fcfce5;
 }
-button:active, button:focus, .button.contact-button:active, .button.contact-button:focus,
+button:active, button:focus, .button:active, .button:focus, .button.contact-button:active, .button.contact-button:focus,
 input[type=button]:active,
 input[type=button]:focus,
 input[type=reset]:active,
@@ -868,6 +923,7 @@ input[type=submit]:focus {
 .header .header-wrapper {
   display: flex;
   padding: 25px;
+  margin-top: 9vh;
 }
 @media only screen and (max-width: 768px) {
   .header .header-wrapper {

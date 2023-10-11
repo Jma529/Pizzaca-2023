@@ -24,7 +24,7 @@ $table_2 = '[product_table category="219" product_table columns="name: Pizza Typ
 $table_3 = '[product_table category="268" product_table columns="name: Pastas, short-description: Descripton, price, add-to-cart" ]';
 $table_4 = '[product_table category="270" product_table columns="name: Mains, short-description: Descripton, price, add-to-cart" ]';
 $table_5 = '[product_table category="272" product_table columns="name: Kids, price, add-to-cart" ]';
-$table_6 = '[product_table category="279" product_table columns="name: Desserts, price, add-to-cart" ]';
+$table_6 = '[product_table category="279" product_table columns="name: Desserts, short-description: Descripton, price, add-to-cart" ]';
 
 
 /**
@@ -50,7 +50,6 @@ $table_6 = '[product_table category="279" product_table columns="name: Desserts,
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"right"}} -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link" href="http://localhost:8888/pizzaca/cart/">View cart</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 <h2>Starters &amp; Salads</h2>

@@ -20,6 +20,7 @@
 	.header-wrapper {
 		display: flex;
 		padding: 25px;
+		margin-top: 9vh;
 
 		@include breakpoint(sm) {
 			padding: 10px;

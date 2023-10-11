@@ -1,0 +1,57 @@
+.announcement-bar {
+  width: 100%;
+  background-color: $color__light;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 15px;
+  z-index: 9999;
+
+  .wrapper {
+    padding: 0 80px;
+  }
+
+  .announcement-content {
+    color: $color__black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    @include breakpoint(sm) {
+      gap: 15px;
+      flex-direction: column;
+    }
+
+    p {
+      margin-bottom: 0;
+      font-family: Akrobat;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-weight: 600;
+
+      @include breakpoint(sm) {
+        font-size: small;
+        text-align: center;
+      }
+    }
+
+    a {
+      background: transparent;
+      border: 1px solid $color__black;
+      color: $color__black;
+      cursor: pointer;
+      text-transform: uppercase;
+
+      @include breakpoint(sm) {
+        font-size: small;
+      }
+     
+      &:hover {
+        background-color: $color__black;
+        color: $color__light;
+      }
+    }
+   
+  }
+}

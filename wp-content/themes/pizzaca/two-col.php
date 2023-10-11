@@ -14,7 +14,6 @@ $store_address_2   = get_option( 'woocommerce_store_address_2' );
 $store_city        = get_option( 'woocommerce_store_city' );
 $store_postcode    = get_option( 'woocommerce_store_postcode' );
 
-
 get_header(); ?>
 
 <main id="primary" class="site-main">
@@ -33,7 +32,8 @@ get_header(); ?>
 						<?php if($store_city) : ?>
 							<br><?php echo $store_city;?>
 						<?php endif; ?>
-							<br><a class="link-dark underline" href="tel:+61892056202">9205 6202</a> 
+							<br><a class="link-dark underline" href="tel:+61893411288">9341 1288</a> 
+							<a class="link-dark underline" href="tel:+61892056202">9205 6202</a> 
 							</p>
 							<p class="bold no-margin">Caffe</p>
 							<p>161 Gildercliffe<br>Scarborough
