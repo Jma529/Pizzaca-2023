@@ -12,7 +12,7 @@
  *
  * @see https://docs.woocommerce.com/document/template-structure/
  * @package WooCommerce\Templates
- * @version 7.8.0
+ * @version 8.2.0
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -66,10 +66,18 @@ $totals = $order->get_order_item_totals(); // phpcs:ignore WordPress.WP.GlobalVa
 			<?php endif; ?>
 		</tfoot>
 	</table>
-	
 	<h3 class="payment_review_heading">Enter your payment details</h3>
-	<div id="payment">
 
+	<?php
+	/**
+	 * Triggered from within the checkout/form-pay.php template, immediately before the payment section.
+	 *
+	 * @since 8.2.0
+	 */
+	do_action( 'woocommerce_pay_order_before_payment' ); 
+	?>
+
+	<div id="payment">
 		<?php if ( $order->needs_payment() ) : ?>
 			<ul class="wc_payment_methods payment_methods methods">
 				<?php
