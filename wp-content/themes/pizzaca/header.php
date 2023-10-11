@@ -44,7 +44,7 @@
 
 					<nav id="site-navigation" class="main-navigation">
 						<button class="menu-toggle" aria-controls="primary-menu"
-							aria-expanded="false"><?php esc_html_e( 'Mobile Menu', 'pizzaca' ); ?>
+							aria-expanded="false"><?php esc_html_e( 'Menu', 'pizzaca' ); ?>
 							<svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m12 19l6-6m-6 6l-6-6m6 6V5"/></svg>
 						</button>
 						<div class="menu-items">

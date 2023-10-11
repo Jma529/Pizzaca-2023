@@ -483,7 +483,7 @@ body .wrapper.full-width {
 }
 @media only screen and (max-width: 576px) {
   body .wrapper {
-    padding: 20px;
+    padding: 40px 20px;
   }
 }
 
@@ -637,6 +637,12 @@ big {
 }
 .announcement-bar .wrapper {
   padding: 0 80px;
+}
+@media only screen and (max-width: 768px) {
+  .announcement-bar .wrapper {
+    padding: 0;
+    max-width: 100vw;
+  }
 }
 .announcement-bar .announcement-content {
   color: #000000;
@@ -928,6 +934,7 @@ input[type=submit]:focus {
 @media only screen and (max-width: 768px) {
   .header .header-wrapper {
     padding: 10px;
+    margin-top: 16vh;
   }
 }
 .header .header-content {
@@ -937,9 +944,8 @@ input[type=submit]:focus {
 }
 @media only screen and (max-width: 768px) {
   .header .header-content {
-    flex-direction: column;
     height: auto;
-    gap: 20px;
+    justify-content: space-between;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -958,6 +964,11 @@ input[type=submit]:focus {
   text-align: center;
   width: 100%;
 }
+@media only screen and (max-width: 768px) {
+  .header .main-navigation {
+    width: auto;
+  }
+}
 .header .main-navigation .arrow {
   transition: all 0.2s linear;
 }
@@ -975,7 +986,12 @@ input[type=submit]:focus {
 }
 @media only screen and (max-width: 768px) {
   .header .main-navigation .menu-items {
-    margin-top: 40px;
+    position: absolute;
+    left: 0;
+    background-color: #24282a;
+    width: 100%;
+    margin-top: 6vh;
+    justify-content: center;
   }
 }
 .header .main-navigation ul {
@@ -1026,12 +1042,13 @@ a {
 /* Mobile menu. */
 .menu-toggle {
   display: none;
-  color: white;
+  color: #f1eed6;
+  background: none;
+  padding: 0;
 }
 @media only screen and (max-width: 768px) {
   .menu-toggle {
     display: flex;
-    position: absolute;
   }
 }
 
