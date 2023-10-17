@@ -934,7 +934,7 @@ input[type=submit]:focus {
 @media only screen and (max-width: 768px) {
   .header .header-wrapper {
     padding: 10px;
-    margin-top: 10vh;
+    margin-top: 15vh;
   }
 }
 .header .header-content {
@@ -1230,10 +1230,6 @@ dt {
   font-weight: 700;
 }
 
-dd {
-  margin: 0 1.5em 1.5em;
-}
-
 /* Make sure embeds and iframes fit their containers. */
 embed,
 iframe,
@@ -1386,6 +1382,12 @@ td.product-thumbnail, th.product-thumbnail {
 }
 
 /* Cart and Checkout page */
+body.woocommerce-checkout .wrapper {
+  padding: 0;
+}
+body.woocommerce-checkout .woocommerce-form-login-toggle {
+  margin-bottom: 20px;
+}
 body.woocommerce-checkout .col-1 {
   width: 100%;
   display: flex;
@@ -1397,6 +1399,12 @@ body.woocommerce-checkout .col-1 .woocommerce-billing-fields__field-wrapper {
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
+}
+body.woocommerce-checkout h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "AkrobatExtraBold", Helvetica, Arial, sans-serif;
+  margin-bottom: 20px;
 }
 body.woocommerce-checkout .shipping_address {
   width: 100%;
@@ -1439,12 +1447,6 @@ body.woocommerce-checkout .col-2 {
   flex-direction: column;
   align-items: flex-start;
 }
-body.woocommerce-checkout .col-2 h3 {
-  font-size: 18px;
-  text-transform: uppercase;
-  font-family: "AkrobatExtraBold", Helvetica, Arial, sans-serif;
-  margin-bottom: 20px;
-}
 body.woocommerce-checkout .woocommerce-form-coupon-toggle {
   display: none;
 }
@@ -1476,18 +1478,20 @@ body.woocommerce-checkout .shop_table thead {
   display: none;
 }
 body.woocommerce-checkout .shop_table tbody {
-  width: 80%;
+  width: 100%;
   margin-bottom: 20px;
-}
-body.woocommerce-checkout .shop_table tfoot {
-  width: 80%;
 }
 body.woocommerce-checkout .shop_table tr {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
 }
 body.woocommerce-checkout .shop_table tr.order-total {
-  font-weight: bold;
+  font-weight: 600;
+}
+body.woocommerce-checkout .shop_table.woocommerce-cart-form__contents td.product-name {
+  width: 25%;
 }
 body.woocommerce-checkout .woocommerce-checkout-payment {
   display: flex;
