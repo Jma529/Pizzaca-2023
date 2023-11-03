@@ -274,3 +274,22 @@ add_filter( 'woocommerce_get_cart_url', 'bbloomer_redirect_empty_cart_checkout_t
 function bbloomer_redirect_empty_cart_checkout_to_shop() {
    return wc_get_page_permalink( 'shop' );
 }
+
+// Change shipping text to delivery
+
+add_filter( 'woocommerce_shipping_package_name', 'custom_shipping_package_name' );
+function custom_shipping_package_name( $name ) {
+return 'Delivery option';
+}
+
+// Hide Archive label
+
+function my_theme_archive_title( $title ) {
+	if ( is_post_type_archive() ) {
+		$title = post_type_archive_title( '', false );
+	} 
+ 
+	return $title;
+}
+
+add_filter( 'get_the_archive_title', 'my_theme_archive_title' );

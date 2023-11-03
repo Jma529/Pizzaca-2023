@@ -35,8 +35,8 @@ $color__text-screen: #21759b;
 $color__text-input: #666;
 $color__text-input-focus: #111;
 $color__link: #f1eed6; 
-$color__link-visited: #fcfce5; 
-$color__link-hover: #fcfce5; 
+$color__link-visited: #24282a; 
+$color__link-hover: #24282a; 
 $color__text-main: #24282a;
 $color__text-main-rev: #f1eed6;
 $color__text-black: #000000;
@@ -94,13 +94,13 @@ $header-height-mobile:      65px;
  * WooCommerce CSS Variables
  */
 
- $woocommerce:   	#a46497 !default;
+ $woocommerce:   	#000000 !default;
  $green:         	#7ad03a !default;
  $red:           	#a00 !default;
  $orange:        	#ffba00 !default;
  $blue:          	#2ea2cc !default;
  
- $primary:           #a46497 !default;                                  // Primary color for buttons (alt)
+ $primary:           #000000 !default;                                  // Primary color for buttons (alt)
  $primarytext:       desaturate(lighten($primary, 50%), 18%) !default;    // Text on primary color bg
  
  $secondary:         desaturate(lighten($primary, 40%), 21%) !default;    // Secondary buttons

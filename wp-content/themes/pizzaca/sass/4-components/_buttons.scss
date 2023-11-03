@@ -10,11 +10,19 @@ input[type="submit"] {
 
 
 	&:hover {
-		color: $color__link-hover;
+		color:  #24282a;
 	}
 
 	&:active,
 	&:focus {
-		color: $color__link-hover;
+		color:  #24282a;
+	}
+}
+
+.place-order {
+	.button {
+		background-color: $color__black;
+		color: $color__light;
+		width: 100%;
 	}
 }

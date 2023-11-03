@@ -126,3 +126,42 @@ body {
 	}
 }
 
+/* Archives */
+
+.post-type-archive {
+	main {
+		padding-top: 25vh;
+
+		@include breakpoint(sm) {
+			padding-top: 40px;
+		}
+	}
+	.archive-flex {
+		display: flex;
+		width: 100%;
+	}
+
+.post-tile {
+	width: 33%;
+	height: 500px;
+
+	.image {
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&.menu-overlay {
+			
+		}
+	}
+}
+}
+//Events 
+
+
+
+
