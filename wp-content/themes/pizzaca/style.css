@@ -1722,10 +1722,23 @@ body.page-work-with-us .vertical {
 .post-type-archive .archive-flex {
   display: flex;
   width: 100%;
+  gap: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .post-type-archive .archive-flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .post-type-archive .post-tile {
   width: 33%;
   height: 500px;
+}
+@media only screen and (max-width: 768px) {
+  .post-type-archive .post-tile {
+    width: 100%;
+  }
 }
 .post-type-archive .post-tile .image {
   background-size: contain;

@@ -139,11 +139,22 @@ body {
 	.archive-flex {
 		display: flex;
 		width: 100%;
+		gap: 30px;
+
+		@include breakpoint(sm) {
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
 	}
 
 .post-tile {
 	width: 33%;
 	height: 500px;
+
+	@include breakpoint(sm) {
+		width: 100%;
+	}
 
 	.image {
 		background-size: contain;
@@ -155,7 +166,7 @@ body {
 		align-items: center;
 
 		&.menu-overlay {
-			
+
 		}
 	}
 }
