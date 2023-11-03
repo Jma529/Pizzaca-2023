@@ -25,9 +25,16 @@ if( have_posts() ) : ?>
           ?>
 
           <article class="post-tile" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-            <div class="image" <?php if($image) : ?> style="background-image: url('<?php echo $image ?>');"<?php endif; ?>>
-
+					<div class="w-20">
+            <div class="image">
+							<img <?php if($image) : ?> src="<?php echo $image ?>');"<?php endif; ?>/>
 						</div>
+					</div>
+					<div class="w-80">
+						<h2><?php the_title(); ?></h2>
+						<p>I am a description blah blah blah</p>
+						<a href="<?php the_permalink();?>" class="button">Read more</a>
+					</div>
           </article>
         <?php endwhile; ?>
       </div>
