@@ -127,8 +127,10 @@ body {
 }
 
 /* Archives */
+body {
 
-.post-type-archive {
+
+	&.post-type-archive {
 	main {
 		padding-top: 25vh;
 
@@ -173,11 +175,28 @@ body {
 		@include breakpoint(sm) {
 			width: 100%;
 		}
+
+		a {
+			color: $color__dark;
+		}
+
+		.button {
+			width: fit-content;
+
+			&:hover {
+				color: $color__light;
+			}
+		}
+
+		h3 {
+			font-weight: 700;
+		}
 	}
 	.image {
 		position: relative;
-		height: 300px;
+		height: 350px;
 		width: 100%;
+		padding-bottom: 100%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -196,6 +215,8 @@ body {
 	}
 }
 }
+}
+
 //Events 
 
 

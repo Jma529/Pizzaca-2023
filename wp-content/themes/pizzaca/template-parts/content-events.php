@@ -32,8 +32,8 @@ if( have_posts() ) : ?>
 					</div>
 					<div class="w-80">
 						<h2><?php the_title(); ?></h2>
-						<p>I am a description blah blah blah</p>
-						<a href="<?php the_permalink();?>" class="button">Read more</a>
+						<?php the_content();?>
+						<a href="https://bookings.nowbookit.com/?accountid=49a6c8b7-9e67-40de-826b-b3e48b11e015&venueid=6636&theme=dark&colors=hex,ffffff" target="_blank" class="button">Make a Booking</a>
 					</div>
           </article>
         <?php endwhile; ?>

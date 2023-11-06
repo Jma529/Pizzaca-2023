@@ -10,7 +10,8 @@ input[type="submit"] {
 
 
 	&:hover {
-		color:  #24282a;
+		color: $color__light;
+		background-color: $color__black;
 	}
 
 	&:active,
