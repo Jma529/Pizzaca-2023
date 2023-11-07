@@ -302,5 +302,18 @@ $woocommerce__color-info: #3d9cd2;
    }
   }
  
+// Product Archive
 
-  
+.daytime-menu {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.full-menu {
+  &.hide {
+    display: none;
+  }
+}

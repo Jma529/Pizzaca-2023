@@ -25,6 +25,9 @@ $table_3 = '[product_table category="268" product_table columns="name: Pastas, s
 $table_4 = '[product_table category="270" product_table columns="name: Mains, short-description: Descripton, price, add-to-cart" ]';
 $table_5 = '[product_table category="272" product_table columns="name: Kids, price, add-to-cart" ]';
 $table_6 = '[product_table category="279" product_table columns="name: Desserts, short-description: Descripton, price, add-to-cart" ]';
+$table_7 = '[product_table category="281" product_table columns="name: Daytime Graze, short-description: Descripton, price, add-to-cart" ]';
+
+
 
 
 /**
@@ -38,35 +41,44 @@ $table_6 = '[product_table category="279" product_table columns="name: Desserts,
 
 ?>
 <main id="primary" class="site-main">
-  <section class="top">
+  <section>
     <div class="wrapper">
-    <h1 class="title">	<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
-		<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
-	<?php endif; ?></h1>
-<!-- wp:paragraph {"align":"left"} -->
-<p>Deliveries and take-away hours: Tues-Sun, 4:30pm-9pm<br><strong>Deliveries: Start at 5pm, Please allow 45 minutes
-<br>Local pick-up: You will receive a text within 15 minutes with your pick-up time.</strong><br>Minimum order: $25<br>Delivery fee: $5</p>
+      <h1 class="title"> <?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
+        <h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
+        <?php endif; ?></h1>
+      <!-- wp:paragraph {"align":"left"} -->
+      <p>Deliveries and take-away hours: Tues-Sun, 4:30pm-9pm<br><strong>Deliveries: Start at 5pm, Please allow 45
+          minutes
+          <br>Local pick-up: You will receive a text within 15 minutes with your pick-up time.</strong><br>Minimum
+        order: $25<br>Delivery fee: $5</p>
 
 
-<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"right"}} -->
-<div class="wp-block-buttons"><!-- wp:button -->
-<!-- /wp:button --></div>
-<!-- /wp:buttons -->
-<h2>Starters &amp; Salads</h2>
-<p> <?php echo do_shortcode($table_1); ?> </p>
-<h2>Wood Fired Pizzas</h2>
-<p> <?php echo do_shortcode($table_2); ?> </p>
-<h2>Pastas</h2>
-<p> <?php echo do_shortcode($table_3); ?> </p>
-<h2>Mains</h2>
-<p> <?php echo do_shortcode($table_4); ?> </p>
-<h2>Kids</h2>
-<p> <?php echo do_shortcode($table_5); ?> </p>
-<h2>Desserts</h2>
-<p> <?php echo do_shortcode($table_6); ?> </p>
-
-</div>
-</section>
+      <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"right"}} -->
+      <div class="wp-block-buttons">
+        <!-- wp:button -->
+        <!-- /wp:button -->
+      </div>
+      <!-- /wp:buttons -->
+      <div class="daytime-menu">
+        <h2>Daytime Graze</h2>
+        <p> <?php echo do_shortcode($table_7); ?> </p>
+      </div>
+      <div class="full-menu">
+        <h2>Starters &amp; Salads</h2>
+        <p> <?php echo do_shortcode($table_1); ?> </p>
+        <h2>Wood Fired Pizzas</h2>
+        <p> <?php echo do_shortcode($table_2); ?> </p>
+        <h2>Pastas</h2>
+        <p> <?php echo do_shortcode($table_3); ?> </p>
+        <h2>Mains</h2>
+        <p> <?php echo do_shortcode($table_4); ?> </p>
+        <h2>Kids</h2>
+        <p> <?php echo do_shortcode($table_5); ?> </p>
+        <h2>Desserts</h2>
+        <p> <?php echo do_shortcode($table_6); ?> </p>
+      </div>
+    </div>
+  </section>
 </main>
 <?php
 /**

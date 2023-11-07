@@ -293,3 +293,33 @@ function my_theme_archive_title( $title ) {
 }
 
 add_filter( 'get_the_archive_title', 'my_theme_archive_title' );
+
+
+// Add daytime menu 
+
+// function daytime_menu() {
+// 	// HERE your product IDs in the array (need to be coma separated)
+// 	return array( 281 );
+// }
+
+// // Utility conditional function that check if day is sunday (returns boolean)
+// function is_weekend() {
+// 	// Set Your shop time zone (http://php.net/manual/en/timezones.php)
+// 	date_default_timezone_set('Australia/Perth');
+
+// 	// If the current day is "sunday" return true (else retun false)
+// 	return ( date('w') == 0 || 7 ) ? true : false;
+// }
+
+
+// function daytime_menu_availability() {
+
+// 	date_default_timezone_set('Australia/Perth'); // Define the Time zone from this allowed time zones strings (http://php.net/manual/en/timezones.php)
+// 	$dayOfWeek = date("w");
+// 	$starting_time = mktime( 11, 30, 00);  // 
+// 	$ending_time = mktime( 15, 00, 00); // 
+// 	$now_time = strtotime("now"); // Now time
+  
+// 	return ( $now_time >= $starting_time && $now_time <= $ending_time ) ? true : false;
+
+// }
