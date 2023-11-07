@@ -1764,9 +1764,12 @@ body.post-type-archive .post-tile .w-80 {
 }
 body.post-type-archive .post-tile .w-80 a {
   color: #24282a;
+  text-decoration: underline;
+  display: inline;
 }
 body.post-type-archive .post-tile .w-80 .button {
   width: fit-content;
+  text-decoration: none;
 }
 body.post-type-archive .post-tile .w-80 .button:hover {
   color: #f1eed6;

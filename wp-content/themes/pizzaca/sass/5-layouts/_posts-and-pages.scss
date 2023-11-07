@@ -178,10 +178,13 @@ body {
 
 		a {
 			color: $color__dark;
+			text-decoration: underline;
+			display: inline;
 		}
 
 		.button {
 			width: fit-content;
+			text-decoration: none;
 
 			&:hover {
 				color: $color__light;
