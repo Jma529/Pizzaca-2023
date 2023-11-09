@@ -272,14 +272,14 @@ function bbloomer_cart_on_checkout_page() {
 add_filter( 'woocommerce_get_cart_url', 'bbloomer_redirect_empty_cart_checkout_to_shop' );
  
 function bbloomer_redirect_empty_cart_checkout_to_shop() {
-   return wc_get_page_permalink( 'shop' );
+   return ( isset( WC()->cart ) && ! WC()->cart->is_empty() ) ? wc_get_checkout_url() : wc_get_page_permalink( 'shop' );
 }
 
 // Change shipping text to delivery
 
 add_filter( 'woocommerce_shipping_package_name', 'custom_shipping_package_name' );
 function custom_shipping_package_name( $name ) {
-return 'Delivery option';
+return 'Delivery option:';
 }
 
 // Hide Archive label
@@ -295,31 +295,24 @@ function my_theme_archive_title( $title ) {
 add_filter( 'get_the_archive_title', 'my_theme_archive_title' );
 
 
-// Add daytime menu 
+// Limit daytime weekend menu to pick up only
 
-// function daytime_menu() {
-// 	// HERE your product IDs in the array (need to be coma separated)
-// 	return array( 281 );
-// }
+add_filter( 'woocommerce_package_rates', 'daytime_menu_availability', 9999, 2 );
 
-// // Utility conditional function that check if day is sunday (returns boolean)
-// function is_weekend() {
-// 	// Set Your shop time zone (http://php.net/manual/en/timezones.php)
-// 	date_default_timezone_set('Australia/Perth');
+function daytime_menu_availability( $rates, $package) {
 
-// 	// If the current day is "sunday" return true (else retun false)
-// 	return ( date('w') == 0 || 7 ) ? true : false;
-// }
+	date_default_timezone_set('Australia/Perth'); // Define the Time zone from this allowed time zones strings (http://php.net/manual/en/timezones.php)
+	$dayOfWeek = date("w");
+	$starting_time = mktime( 7, 30, 00);  // 
+	$ending_time = mktime( 15, 00, 00); // 
+	$now_time = strtotime("now"); // Now time
 
+	// If Sat or Sun in between 12-3pm, only allow local pick up.
 
-// function daytime_menu_availability() {
+	if ( ($dayOfWeek == 4 || $dayOfWeek == 6) && $now_time >= $starting_time && $now_time <= $ending_time ) {
+		unset( $rates['flat_rate:1'] ); // Remove delivery shipping method
+	}
 
-// 	date_default_timezone_set('Australia/Perth'); // Define the Time zone from this allowed time zones strings (http://php.net/manual/en/timezones.php)
-// 	$dayOfWeek = date("w");
-// 	$starting_time = mktime( 11, 30, 00);  // 
-// 	$ending_time = mktime( 15, 00, 00); // 
-// 	$now_time = strtotime("now"); // Now time
-  
-// 	return ( $now_time >= $starting_time && $now_time <= $ending_time ) ? true : false;
+	return $rates;
 
-// }
+}
