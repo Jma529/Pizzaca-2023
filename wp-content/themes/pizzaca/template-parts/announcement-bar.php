@@ -4,7 +4,7 @@
       <p>
         We are now open for lunch Sat/Sun from 12pm: pizza, pasta, share plates & drinks
       </p>
-      <a href="http://localhost:8888/pizzaca/menus/#daytime-graze"class="button">
+      <a href="https://pizzaca.com/menus/#daytime-graze"class="button">
         See Menu
       </a>
     </div>
