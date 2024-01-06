@@ -59,7 +59,7 @@ $table_7 = '[product_table category="281" product_table columns="name: Daytime G
         <!-- /wp:button -->
       </div>
       <!-- /wp:buttons -->
-      <div class="daytime-menu">
+      <!-- <div class="daytime-menu">
         <h2>Daytime Graze</h2>
         <p> <?php echo do_shortcode($table_7); ?> </p>
       </div>
@@ -77,7 +77,7 @@ $table_7 = '[product_table category="281" product_table columns="name: Daytime G
         <h2>Desserts</h2>
         <p> <?php echo do_shortcode($table_6); ?> </p>
       </div>
-    </div>
+    </div> -->
   </section>
 </main>
 <?php

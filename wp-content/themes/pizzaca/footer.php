@@ -34,10 +34,9 @@
 						<div>
 							<p class="margin-bottom">We are now a fully licensed venue</p>
 							<p><span class="bold">Open</span> Tues-Sun 4pm-Late<br>Kitchen open until 9pm, fri/sat until 9:30pm</p>
-							<p><span class="bold">Daytime graze menu:</span> Weekends 12-3pm</p>
 							<p class="margin-bottom"><span class="bold">Tuesday only:</span> BYO, $8 corkage per bottle</p>
 							<p class="margin-bottom"><span class="bold">Caffe: </span>Open Tues-Fri 7:30am-2:30pm<br> Weekends open until 3:30pm </p>
-							<p><span class="bold">Chrissy Holiday Hours: </span>Closed 24, 25, 26, 31 Dec & 1 Jan</p>
+							<!-- <p><span class="bold">Chrissy Holiday Hours: </span>Closed 24, 25, 26, 31 Dec & 1 Jan</p> -->
 						</div>
 					</div>
 					<div class="nav-item">

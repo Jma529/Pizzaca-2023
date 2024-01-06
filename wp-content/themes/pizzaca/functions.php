@@ -297,22 +297,22 @@ add_filter( 'get_the_archive_title', 'my_theme_archive_title' );
 
 // Limit daytime weekend menu to pick up only
 
-add_filter( 'woocommerce_package_rates', 'daytime_menu_availability', 9999, 2 );
+// add_filter( 'woocommerce_package_rates', 'daytime_menu_availability', 9999, 2 );
 
-function daytime_menu_availability( $rates, $package) {
+// function daytime_menu_availability( $rates, $package) {
 
-	date_default_timezone_set('Australia/Perth'); // Define the Time zone from this allowed time zones strings (http://php.net/manual/en/timezones.php)
-	$dayOfWeek = date("w");
-	$starting_time = mktime( 12, 00, 00);  // 
-	$ending_time = mktime( 15, 00, 00); // 
-	$now_time = strtotime("now"); // Now time
+// 	date_default_timezone_set('Australia/Perth'); // Define the Time zone from this allowed time zones strings (http://php.net/manual/en/timezones.php)
+// 	$dayOfWeek = date("w");
+// 	$starting_time = mktime( 12, 00, 00);  // 
+// 	$ending_time = mktime( 15, 00, 00); // 
+// 	$now_time = strtotime("now"); // Now time
 
-	// If Sat or Sun in between 12-3pm, only allow local pick up.
+// 	// If Sat or Sun in between 12-3pm, only allow local pick up.
 
-	if ( ($dayOfWeek == 6 || $dayOfWeek == 0) && $now_time >= $starting_time && $now_time <= $ending_time ) {
-		unset( $rates['flat_rate:1'] ); // Remove delivery shipping method
-	}
+// 	// if ( ($dayOfWeek == 6 || $dayOfWeek == 0) && $now_time >= $starting_time && $now_time <= $ending_time ) {
+// 	// 	unset( $rates['flat_rate:1'] ); // Remove delivery shipping method
+// 	// }
 
-	return $rates;
+// 	// return $rates;
 
-}
+// }
