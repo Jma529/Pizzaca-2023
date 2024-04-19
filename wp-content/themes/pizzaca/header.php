@@ -65,3 +65,5 @@
 				</div>
 			</div>
 		</header><!-- #masthead -->
+		<!-- Announcement bar -->
+		<?php get_template_part( 'template-parts/announcement-bar' ); ?>
