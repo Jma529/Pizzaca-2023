@@ -4,9 +4,9 @@
       <p>
         We are now open Sat/Sun from 12pm: pizza all day, daytime graze until 3pm and happy hour from 1-2pm!
       </p>
-      <!-- <a href="https://pizzaca.com/menus/#daytime-graze"class="button">
+      <a href="https://pizzaca.com/menus/#daytime-graze"class="button">
         See Menu
-      </a> -->
+      </a>
     </div>
   </div>
 </div>
