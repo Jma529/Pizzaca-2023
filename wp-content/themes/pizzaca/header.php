@@ -59,11 +59,6 @@
 				<span class="nav-button button" data-glf-cuid="f4cbfa26-126d-4478-94a8-01d2c5ca7324" data-glf-ruid="541fea5b-5c12-4679-a77e-94dbb414f84b" >ORDER ONLINE</span>
 						</div>
 					</nav><!-- #site-navigation -->
-					<!-- <div class="cart-icon">
-						<a class="basketicon" href="<?php echo wc_get_checkout_url(); ?>"
-							title="<?php _e( 'View your shopping cart' ); ?>"> <i class="fa fa-shopping-cart"></i>
-							<?php echo WC()->cart->get_cart_total(); ?></a>
-					</div> -->
 				</div>
 			</div>
 		</header><!-- #masthead -->
