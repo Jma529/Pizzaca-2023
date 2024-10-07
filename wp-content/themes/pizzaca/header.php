@@ -22,6 +22,7 @@
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<!-- Begin Mailchimp Signup Form -->
 	<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+	<script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script>
 
 	<?php wp_head(); ?>
 </head>
@@ -47,7 +48,7 @@
 							aria-expanded="false"><?php esc_html_e( 'Menu', 'pizzaca' ); ?>
 							<svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m12 19l6-6m-6 6l-6-6m6 6V5"/></svg>
 						</button>
-						<div class="menu-items">
+						<div class="menu-items" id="nav-menu">
 							<?php
 				wp_nav_menu(
 					array(
@@ -55,13 +56,14 @@
 					)
 				);
 				?>
+				<span class="nav-button button" data-glf-cuid="f4cbfa26-126d-4478-94a8-01d2c5ca7324" data-glf-ruid="541fea5b-5c12-4679-a77e-94dbb414f84b" >ORDER ONLINE</span>
 						</div>
 					</nav><!-- #site-navigation -->
-					<div class="cart-icon">
+					<!-- <div class="cart-icon">
 						<a class="basketicon" href="<?php echo wc_get_checkout_url(); ?>"
 							title="<?php _e( 'View your shopping cart' ); ?>"> <i class="fa fa-shopping-cart"></i>
 							<?php echo WC()->cart->get_cart_total(); ?></a>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</header><!-- #masthead -->

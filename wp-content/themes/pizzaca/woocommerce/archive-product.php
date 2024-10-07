@@ -15,6 +15,7 @@
  * @version 8.6.0
  */
 
+
 defined( 'ABSPATH' ) || exit;
 
 get_header('shop');
@@ -66,7 +67,7 @@ $table_7 = '[product_table category="282" product_table columns="name: Daytime G
 	// ?>
 
 
-    <div class="wrapper">
+    <div class="wrapper with-bar">
     <h1 class="title"> <?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
       <h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
       <?php endif; ?></h1>

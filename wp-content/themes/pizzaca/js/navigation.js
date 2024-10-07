@@ -19,7 +19,7 @@
 		return;
 	}
 
-	const menu = siteNavigation.getElementsByTagName( 'ul' )[ 0 ];
+	const menu = document.getElementById( 'nav-menu' );
 
 	// Hide menu toggle button if menu is empty and return early.
 	if ( 'undefined' === typeof menu ) {
@@ -27,9 +27,9 @@
 		return;
 	}
 
-	if ( ! menu.classList.contains( 'nav-menu' ) ) {
-		menu.classList.add( 'nav-menu' );
-	}
+	// if ( ! menu.classList.contains( 'nav-menu' ) ) {
+	// 	menu.classList.add( 'nav-menu' );
+	// }
 
 	// Toggle the .toggled class and the aria-expanded value each time the button is clicked.
 	button.addEventListener( 'click', function() {

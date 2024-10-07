@@ -7,11 +7,21 @@ input[type="submit"] {
 	border-radius: 0px;
 	padding: 10px 20px;
 	background-color: transparent;
+	cursor: pointer;
 
 
 	&:hover {
 		color: $color__light;
 		background-color: $color__black;
+	}
+
+	&.menu-toggle {
+		&:hover, &:active,
+		&:focus  {
+			color: $color__light;
+			background-color: transparent;
+			border-color: transparent;
+		}
 	}
 
 	&:active,
@@ -24,6 +34,20 @@ input[type="submit"] {
 	.button {
 		background-color: $color__black;
 		color: $color__light;
+		width: 100%;
+	}
+}
+
+.nav-button {
+	background-color: $color__black;
+	color: $color__light;
+	width: fit-content;
+	color: $color__text-main-rev;
+	font-family: $font__headings;
+	font-size: 18px;
+	text-transform: uppercase;
+
+	@include breakpoint(sm) {
 		width: 100%;
 	}
 }

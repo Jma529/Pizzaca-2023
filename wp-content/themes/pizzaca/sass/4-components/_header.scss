@@ -21,21 +21,25 @@
 	.header-wrapper {
 		display: flex;
 		padding: 25px;
-		// margin-top: 9vh; If announcement bar active
+			// If announcement bar active
+		margin-top: 9vh; 
 
 		@include breakpoint(sm) {
 			padding: 10px;
-			// margin-top: 15vh; If announcement bar active
+			// If announcement bar active
+			margin-top: 15vh; 
 		}
 	}
 
 	.header-content {
-		display: flex;
-		align-items: center;
-		width: 100%;
-
+		display: grid;
+    width: 100%;
+    grid-template-columns: repeat(6, 1fr);
+    align-content: center;
 
 		@include breakpoint(sm) {
+			display: flex;
+			align-items: center;
 			height: auto;
 			justify-content: space-between;
 		}
@@ -53,12 +57,17 @@
 }
 	.main-navigation {
 		display: flex;
-		justify-content: center;
 		text-align: center;
 		width: 100%;
+    text-align: center;
+    width: 100%;
+    grid-column: 3 / full;
+    gap: 20px;
+    align-items: center;
 
 		@include breakpoint(sm) {
 			width: auto;
+			justify-content: center;
 		}
 
 		.arrow {
@@ -76,17 +85,30 @@
 			}
 		}
 
+		.nav-button {
+			margin-left: 30px;
+
+			@include breakpoint(sm) {
+				margin: 0;
+				margin-top: 30px;
+			}
+
+
+		}
+
 		.menu-items {
 			display: flex;
 			align-items: center;
 
 			@include breakpoint(sm) {
 				position: absolute;
-				left: 0;
-				background-color: $color__dark;
-				width: 100%;
-				margin-top: 6vh;
-				justify-content: center;
+        left: 0;
+        background-color: #24282a;
+        width: 100%;
+        margin-top: 6vh;
+        height: 100vh;
+        top: 18vh;
+				display: none;
 			}
 		}
 
@@ -95,14 +117,14 @@
 			list-style: none;
 			margin: 0;
 			padding-left: 0;
+			gap: 30px;
 
 			@include breakpoint(sm) {
-				display: none;
+				flex-direction: column;
 			}
 		}
 
 			li {
-				padding: 40px;
 
 				&:hover > ul,
 				&.focus > ul {
@@ -154,14 +176,17 @@
 	padding: 0;
  
 	@include breakpoint(sm) {
-	display: flex;
+		display: flex;
 	}
 }
 
-.main-navigation.toggled ul {
+.main-navigation.toggled .menu-items {
 	@include breakpoint(sm) {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		padding: 20px;
 	}
 }
 .comment-navigation,
