@@ -985,7 +985,7 @@ input[type=submit]:focus {
 @media only screen and (max-width: 768px) {
   .header .header-wrapper {
     padding: 10px;
-    margin-top: 15vh;
+    margin-top: 20vh;
   }
 }
 .header .header-content {
@@ -1060,7 +1060,7 @@ input[type=submit]:focus {
     width: 100%;
     margin-top: 6vh;
     height: 100vh;
-    top: 18vh;
+    top: 23vh;
     display: none;
   }
 }
